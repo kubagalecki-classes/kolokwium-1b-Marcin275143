@@ -12,7 +12,7 @@ vector <Artysta> stworzZespol (int liczba, const string &obiekt)
 	vector <Artysta> artysci;
 	if (obiekt.length() != liczba)
 	{
-		throw logic_error("logic error");
+		throw logic_error{"logic error"};
 	}
 	liczba = artysci.size();
 	Artysta artysta_1 = Artysta(obiekt, 1);
