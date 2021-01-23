@@ -21,8 +21,8 @@ public:
 
 Artysta* stworzArtyste(const std::string& s)
 {
-    if (s.front() == toupper(s.front()))
-        return new PopGwiazda{"BTS", 1234};
-    else
-        return new RapGwiazda{"Ye", 4321};
+    Artysta *artysta;
+    if (s.front() == toupper(s.front())) artysta = new PopGwiazda{"BTS", 1234};
+    else artysta = new RapGwiazda{"Ye", 4321};
+    return artysta;
 }
