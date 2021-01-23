@@ -12,7 +12,7 @@ unsigned liczPopularnych(Artysta A1, Artysta A2)
 	vector <Artysta> popularni;
 	A1 = popularni.begin();
 	A2 = popularni.end();
-  unsigned liczba_popularnych = count_if(A1, A2, porownanie());
+  	unsigned liczba_popularnych = count_if(A1, A2, porownanie());
 	return liczba_popularnych;
 }
 
