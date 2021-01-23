@@ -14,11 +14,11 @@ vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 	{
 		throw logic_error("logic error");
 	}
-//	artysci.resize(liczba);
 	artysci.reserve(liczba);
 	for (int i = 0; i < liczba; ++i)
 	{
-		artysci.push_back(obiekt, i + 1);
+		Artysta artysta = Artysta(obiekt, i + 1);
+		artysci.push_back(artysta);
 	}
 	return artysci;
 }
