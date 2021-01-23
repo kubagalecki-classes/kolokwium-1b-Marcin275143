@@ -12,6 +12,7 @@ class Artysta
 {
 public:
 
+	Artysta() {};
 	Artysta() : "Anonim"(), 0() {};
 	Artysta(const string& A, const unsigned int& L) : pseudonim(A), liczba_sluchaczy(L) {};
 
