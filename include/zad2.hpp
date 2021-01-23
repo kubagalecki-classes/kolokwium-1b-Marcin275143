@@ -8,23 +8,21 @@
 class PopGwiazda : public Artysta
 {
 public:
-
-	PopGwiazda(const string& P, unsigned L) : Artysta(P, L) {};
-
-	void graj(ostream &os) override { os << "Popgwiazda: " << getPseudonim(); }
+    PopGwiazda(const std::string& s, unsigned f) : Artysta{s, f} {}
+    void graj(std::ostream& o) const override { o << "PopGwiazda: " << getPseudonim(); }
 };
 
 class RapGwiazda : public Artysta
 {
 public:
-
-	RapGwiazda(const string& P, unsigned L) : Artysta(P, L) {};
-
-	void graj(ostream &os) override { os << "Rapgwiazda: " << getPseudonim(); }
+    RapGwiazda(const std::string& s, unsigned f) : Artysta{s, f} {}
+    void graj(std::ostream& o) const override { o << "RapGwiazda: " << getPseudonim(); }
 };
 
-Artysta* stworzArtyste(string& obiekt)
+Artysta* stworzArtyste(const std::string& s)
 {
-	if (obiekt.front() == toupper(obiekt.front()) ) return new PopGwiazda("BTS", 1234);
-	else return new RapGwiazda("Ye", 4321);
+    if (s.front() == std::toupper(s.front()))
+        return new PopGwiazda{"BTS", 1234};
+    else
+        return new RapGwiazda{"Ye", 4321};
 }
