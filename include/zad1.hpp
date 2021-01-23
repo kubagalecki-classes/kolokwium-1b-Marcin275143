@@ -12,8 +12,8 @@ class Artysta
 {
 public:
 
-	Artysta() {};
-	Artysta() : "Anonim"(), 0() {};
+//	Artysta() {};
+	Artysta() : pseudonim("Anonim"), liczba_sluchaczy(0) {};
 	Artysta(const string& A, const unsigned int& L) : pseudonim(A), liczba_sluchaczy(L) {};
 
 //	friend ostream& operator << (const ostream& os, const Artysta& A) { os << A.pseudonim << " : " << A.liczba_sluchaczy; return os; }
