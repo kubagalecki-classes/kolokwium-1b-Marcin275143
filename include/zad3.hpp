@@ -8,13 +8,13 @@ class ArtystaPlusInstrument
 public:
 
 	ArtystaPlusInstrument() {};
-	ArtystaPlusInstrument(const Artysta* &A, const Instrument &I) : a(A), i(I) {};
+	ArtystaPlusInstrument(const Artysta &A, const Instrument &I) : a(A), i(I) {};
 
-	unsigned koncert() { return(i.liczbaUczestnikow(a.liczba_sluchaczy)); }
+	unsigned koncert() { return(i.liczbaUczestnikow(a)); }
 
 private:
 
-	Artysta* a;
+	Artysta a;
 	Instrument i;
 };
 //tutaj szablon ArtystaPlusInstrument
