@@ -9,12 +9,12 @@ class PopGwiazda : public Artysta
 {
 public:
 
-	PopGwiazda() {};
-	PopGwiazda(const string& P, unsigned L) : pseudonim(P), liczba_sluchaczy(L) { pseudonim = "Popgwiazda"; liczba_sluchaczy = 2000; }
+//	PopGwiazda() {};
+	PopGwiazda(const string& P, unsigned L) : Artysta(P, L) {}
 
-	virtual void graj(ostream &os) override { os << "Popgwiazda: " << pseudonim; }
+	virtual void graj(ostream &os) override { os << "Popgwiazda: " << get_pseudonim; }
 
-	~PopGwiazda() {};
+//	~PopGwiazda() {};
 
 private:
 
@@ -26,10 +26,10 @@ class RapGwiazda : public Artysta
 {
 public:
 
-	RapGwiazda() {};
-	RapGwiazda(const string& P, unsigned L) : pseudonim(P), liczba_sluchaczy(L) { pseudonim = "Rapgwiazda"; liczba_sluchaczy = 3000; }
+//	RapGwiazda() {};
+	RapGwiazda(const string& P, unsigned L) : Artysta(P, L) {}
 
-	virtual void graj(ostream &os) override { os << "Rapgwiazda: " << pseudonim; }
+	virtual void graj(ostream &os) override { os << "Rapgwiazda: " << get_pseudonim; }
 
 	~RapGwiazda() {};
 
