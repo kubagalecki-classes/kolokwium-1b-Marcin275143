@@ -11,7 +11,7 @@ public:
 
 	PopGwiazda(const string& P, unsigned L) : Artysta(P, L) {};
 
-	void graj(ostream &os) override { os << "Popgwiazda: " << get_pseudonim(); }
+	void graj(ostream &os) override { os << "Popgwiazda: " << getPseudonim(); }
 };
 
 class RapGwiazda : public Artysta
@@ -20,7 +20,7 @@ public:
 
 	RapGwiazda(const string& P, unsigned L) : Artysta(P, L) {};
 
-	void graj(ostream &os) override { os << "Rapgwiazda: " << get_pseudonim(); }
+	void graj(ostream &os) override { os << "Rapgwiazda: " << getPseudonim(); }
 };
 
 Artysta* stworzArtyste(string& obiekt)
