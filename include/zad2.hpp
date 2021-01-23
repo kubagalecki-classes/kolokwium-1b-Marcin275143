@@ -26,7 +26,7 @@ public:
 Artysta* stworzArtyste(string& obiekt)
 {
 	Artysta* artysta;
-	if (toupper(obiekt.front()) == obiekt.front()) *artysta = PopGwiazda("BTS", 1234);
-	else *artysta = RapGwiazda("Ye", 4321);
+	if (toupper(obiekt.front()) == obiekt.front()) artysta = &PopGwiazda("BTS", 1234);
+	else artysta = &RapGwiazda("Ye", 4321);
 	return *artysta;
 }
