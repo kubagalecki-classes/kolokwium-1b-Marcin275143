@@ -9,14 +9,14 @@ class PopGwiazda : public Artysta
 {
 public:
     PopGwiazda(const string& s, unsigned f) : Artysta{s, f} {}
-    virtual void graj(ostream& o) override { o << "PopGwiazda: " << getPseudonim(); }
+    virtual void graj(ostream& o) const override { o << "PopGwiazda: " << getPseudonim(); }
 };
 
 class RapGwiazda : public Artysta
 {
 public:
     RapGwiazda(const string& s, unsigned f) : Artysta{s, f} {}
-    virtual void graj(ostream& o) override { o << "RapGwiazda: " << getPseudonim(); }
+    virtual void graj(ostream& o) const override { o << "RapGwiazda: " << getPseudonim(); }
 };
 
 Artysta* stworzArtyste(const std::string& s)
