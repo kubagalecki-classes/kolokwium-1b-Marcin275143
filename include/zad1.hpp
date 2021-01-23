@@ -16,7 +16,7 @@ class Artysta
 public:
     Artysta() : name{"Anonim"}, fans{0} {}
     Artysta(const string& s, unsigned f) : name{s}, fans{f} {}
-    ~Artysta() {};
+    virtual o~Artysta() {};
 
     virtual void       graj(ostream& o) const { o << name << ": " << fans; }
     string             getPseudonim() { return name; }
