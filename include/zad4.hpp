@@ -7,7 +7,7 @@
 
 using namespace std;
 
-vector <Artysta> stworzZespol (int liczba, const string &obiekt)
+vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 {
 	vector <Artysta> artysci;
 	if (obiekt.length() != liczba)
