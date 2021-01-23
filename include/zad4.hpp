@@ -10,11 +10,16 @@ using namespace std;
 vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 {
 	vector <Artysta> artysci;
-	if (obiekt.size() != liczba) throw logic_error{"logic error"};
-	artysci.reserve(liczba);
+	if (obiekt.size() != liczba)
+	{
+		throw logic_error{"logic error"};
+	}
+	artysci.resize(liczba);
+//	artysci.reserve(liczba);
 	for (int i = 0; i < liczba; ++i)
 	{
-		artysci.emplace_back(obiekt, i + 1);
+		Artysta artysta = Artysta(obiekt, i + 1);
+		artysci.push_back(artysta);
 	}
 	return artysci;
 }
