@@ -19,10 +19,10 @@ public:
     virtual void graj(ostream& o) const override { o << "RapGwiazda: " << getPseudonim(); }
 };
 
-Artysta* stworzArtyste(const std::string& s)
+Artysta* stworzArtyste(string &obiekt)
 {
     Artysta *artysta;
-    if (s.front() == toupper(s.front())) artysta = new PopGwiazda{"BTS", 1234};
+    if (obiekt.front() == toupper(obiekt.front())) artysta = new PopGwiazda{"BTS", 1234};
     else artysta = new RapGwiazda{"Ye", 4321};
     return artysta;
 }
