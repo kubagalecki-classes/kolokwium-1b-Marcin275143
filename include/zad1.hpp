@@ -10,15 +10,15 @@ using namespace std;
 
 class Artysta
 {
-    string name;
+    string      name;
     unsigned    fans;
 
 public:
     Artysta() : name{"Anonim"}, fans{0} {}
     Artysta(const string& s, unsigned f) : name{s}, fans{f} {}
-    virtual ~Artysta() = default;
+    ~Artysta() {};
 
     virtual void       graj(ostream& o) const { o << name << ": " << fans; }
-    const std::string& getPseudonim() const { return name; }
-    unsigned           getSluchacze() const { return fans; }
+    string             getPseudonim() { return name; }
+    unsigned           getSluchacze() { return fans; }
 };
