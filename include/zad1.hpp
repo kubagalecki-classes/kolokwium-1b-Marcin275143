@@ -25,7 +25,7 @@ public:
 
 private:
 
-	string pseudonim = "Anonim";
-	unsigned liczba_sluchaczy : 0;
+	string pseudonim;
+	unsigned liczba_sluchaczy;
 };
 // tutaj klasa Artysta
