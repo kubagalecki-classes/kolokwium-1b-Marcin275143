@@ -12,8 +12,7 @@ vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 	vector <Artysta> artysci;
 	if (obiekt.size() != liczba)
 	{
-		try { throw logic_error("logic error"); }
-		catch (exception& e) { cout << "Rzucono wyjatek"; }
+		throw logic_error("logic error");
 	}
 //	artysci.resize(liczba);
 	artysci.reserve(liczba);
