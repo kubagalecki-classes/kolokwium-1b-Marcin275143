@@ -23,6 +23,8 @@ public:
 	string get_pseudonim() { return pseudonim; }
 	unsigned get_liczba_sluchaczy() { return liczba_sluchaczy; }
 
+	virtual ~Ąrtysta() {};
+	
 private:
 
 	string pseudonim;
