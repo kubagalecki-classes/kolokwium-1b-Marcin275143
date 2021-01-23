@@ -15,7 +15,7 @@ vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 		throw logic_error{"logic error"};
 	}
 	artysci.reserve(liczba);
-	for int(i = 0; i < liczba; i++)
+	for int(i = 0; i < liczba; ++i)
 	{
 		Artysta artysta = Artysta(obiekt, i + 1);
 		artysci.push_back(artysta);
