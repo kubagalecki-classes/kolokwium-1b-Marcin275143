@@ -11,8 +11,7 @@ using namespace std;
 class Artysta
 {
 public:
-
-//	Artysta() {};
+	
 	Artysta() : pseudonim("Anonim"), liczba_sluchaczy(0) {};
 	Artysta(const string& A, const unsigned int& L) : pseudonim(A), liczba_sluchaczy(L) {};
 
