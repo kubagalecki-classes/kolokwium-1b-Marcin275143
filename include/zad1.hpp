@@ -15,10 +15,10 @@ public:
 	Artysta() {};
 	Artysta(const string& A, const unsigned int& L) : pseudonim(A), liczba_sluchaczy(L) {};
 
-	friend ostream& operator << (const ostream & os, const Artysta & A) { os << A.pseudonim << " : " << A.liczba_sluchaczy; }
+//	friend ostream& operator << (const ostream& os, const Artysta& A) { os << A.pseudonim << " : " << A.liczba_sluchaczy; return os; }
 
-	void graj(const ostream& os, const Artysta& A) { os << A; }
-//	virtual void graj(const ostream& os) = 0;
+	void graj(ostream& os) { os << pseudonim << " : " << liczba_sluchaczy; }
+//	virtual void graj() = 0;
 
 	string get_pseudonim() { return pseudonim; }
 	unsigned int get_liczba_sluchaczy() { return liczba_sluchaczy; }
