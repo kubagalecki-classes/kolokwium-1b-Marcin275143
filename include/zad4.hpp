@@ -12,10 +12,11 @@ vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 	vector <Artysta> artysci;
 	if (obiekt.size() != liczba)
 	{
-		throw logic_error{"logic error"};
+		try { throw logic_error("logic error"); }
+		catch (exception& e) { cout << "Rzucono wyjatek"; }
 	}
-	artysci.resize(liczba);
-//	artysci.reserve(liczba);
+//	artysci.resize(liczba);
+	artysci.reserve(liczba);
 	for (int i = 0; i < liczba; ++i)
 	{
 		Artysta artysta = Artysta(obiekt, i + 1);
