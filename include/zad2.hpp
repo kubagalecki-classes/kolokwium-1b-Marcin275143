@@ -19,7 +19,7 @@ public:
     virtual void graj(ostream& o) const override { o << "RapGwiazda: " << getPseudonim(); }
 };
 
-Artysta* stworzArtyste(string &obiekt)
+Artysta* stworzArtyste(const string &obiekt)
 {
     Artysta *artysta;
     if (obiekt.front() == toupper(obiekt.front())) artysta = new PopGwiazda{"BTS", 1234};
