@@ -10,21 +10,15 @@ using namespace std;
 
 class Artysta
 {
+    string name;
+    unsigned    fans;
+
 public:
-	
-	Artysta() : pseudonim("Anonim"), liczba_sluchaczy(0) {};
-	Artysta(const string& A, unsigned L) : pseudonim(A), liczba_sluchaczy(L) {};
+    Artysta() : name{"Anonim"}, fans{0} {}
+    Artysta(const string& s, unsigned f) : name{s}, fans{f} {}
+    virtual ~Artysta() = default;
 
-	void graj(ostream& os) { os << pseudonim << " : " << liczba_sluchaczy; }
-
-	string get_pseudonim() { return pseudonim; }
-	unsigned get_liczba_sluchaczy() { return liczba_sluchaczy; }
-
-	~Ąrtysta() {};
-	
-private:
-
-	string pseudonim;
-	unsigned liczba_sluchaczy;
+    virtual void       graj(ostream& o) const { o << name << ": " << fans; }
+    const std::string& getPseudonim() const { return name; }
+    unsigned           getSluchacze() const { return fans; }
 };
-// tutaj klasa Artysta
