@@ -10,7 +10,7 @@ using namespace std;
 vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 {
 	vector <Artysta> artysci;
-	if (obiekt.length() != liczba)
+	if (obiekt.size() != liczba)
 	{
 		throw logic_error{"logic error"};
 	}
