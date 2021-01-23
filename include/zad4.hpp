@@ -14,13 +14,12 @@ vector <Artysta> stworzZespol (int liczba, const string &obiekt)
 	{
 		throw logic_error{"logic error"};
 	}
-	liczba = artysci.size();
-	Artysta artysta_1 = Artysta(obiekt, 1);
-	Artysta artysta_2 = Artysta(obiekt, 2);
-	Artysta artysta_3 = Artysta(obiekt, 3);
-	artysci.push_back(artysta_1);
-	artysci.push_back(artysta_2);
-	artysci.push_back(artysta_3);
+	artysci.resize() = liczba;
+	for int(i = 0; i < liczba; i++)
+	{
+		Artysta artysta = Artysta(obiekt, i + 1);
+		artysci.push_back(artysta);
+	}
 	return artysci;
 }
 // tutaj funkcja stworzZespol
