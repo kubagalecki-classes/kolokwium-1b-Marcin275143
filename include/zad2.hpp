@@ -16,10 +16,10 @@ public:
 
 //	~PopGwiazda() {};
 
-private:
+//private:
 
-	string pseudonim = "Popgwiazda";
-	unsigned liczba_sluchaczy : 1000;
+//	string pseudonim = "Popgwiazda";
+//	unsigned liczba_sluchaczy : 1000;
 };
 
 class RapGwiazda : public Artysta
@@ -31,12 +31,12 @@ public:
 
 	virtual void graj(ostream &os) override { os << "Rapgwiazda: " << get_pseudonim(); }
 
-	~RapGwiazda() {};
+//	~RapGwiazda() {};
 
-private:
+//private:
 
-	string pseudonim = "Rapgwiazda";
-	unsigned liczba_sluchaczy : 1500;
+//	string pseudonim = "Rapgwiazda";
+//	unsigned liczba_sluchaczy : 1500;
 };
 
 Artysta* stworzArtyste(string& obiekt)
