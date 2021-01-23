@@ -19,7 +19,7 @@ vector <Artysta> stworzZespol (unsigned liczba, const string &obiekt)
 	artysci.reserve(liczba);
 	for (int i = 0; i < liczba; ++i)
 	{
-		Artysta artysta = Artysta(obiekt, i + 1);
+		Artysta artysta = new Artysta(obiekt, i + 1);
 		artysci.push_back(artysta);
 	}
 	return artysci;
