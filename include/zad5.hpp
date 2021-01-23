@@ -7,12 +7,12 @@
 //class Porownaj : public Artysta { public: bool& operator<(Artysta& a) { if (a.get_liczba_sluchaczy() > 1000) true ? false; } } porownanie;
 
 template <typename Artysta>
-unsigned liczPopularnych(Artysta A1, Artysta A2)
+int liczPopularnych(Artysta A1, Artysta A2)
 {
 	vector <Artysta> popularni;
 	A1 = popularni.begin();
 	A2 = popularni.end();
-  	unsigned liczba_popularnych = count_if(A1, A2, [](const Artysta &A) {return A.getSluchacze() > 1000});
+  	int liczba_popularnych = count_if(A1, A2, [](const Artysta &A) {return A.getSluchacze() > 1000;});
 	return liczba_popularnych;
 }
 
