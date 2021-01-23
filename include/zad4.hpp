@@ -1,7 +1,11 @@
 #include "zad1.hpp"
 
+#include <iostream>
+#include <string>
 #include <exception>
 #include <vector>
+
+using namespace std;
 
 vector <Artysta> stworzZespol (int liczba, string &obiekt)
 {
